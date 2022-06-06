@@ -406,7 +406,7 @@ const App = () => {
           <div onClick={!voted ? () => vote("Bola Tinubu") : () => {}}>
             Ahmed Bola Tinubu
             <div className='party'>
-              All Progressive Congress
+              All Progressives Congress
             </div>
             { voted ? <div>
               {voteCount !== null ? voteCount.Tinubu : <></>}
@@ -451,7 +451,7 @@ const App = () => {
       { registered === false ?
       // If the user has not registered
       <section className='register-section'>
-        Not yet registered
+        Not yet a registered voter
         
         {/* The registration form */}
         <div className='register-form'>
