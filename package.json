@@ -1,7 +1,8 @@
 {
-  "name": "democrats",
+  "name": "nigeria-decides-web3",
   "private": true,
-  "version": "0.0.0",
+  "license": "MIT",
+  "version": "0.9.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
