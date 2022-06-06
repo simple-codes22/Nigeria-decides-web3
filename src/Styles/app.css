@@ -1,0 +1,102 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+#title {
+    /* width: 100vw; */
+    text-align: center;
+    margin: 5px;
+    padding: 17px;
+    font-size: 1.8rem;
+    color: rgb(35, 35, 35);
+    letter-spacing: 0.3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#subtitle {
+    /* width: 100vw; */
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+#candidates {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100vw; */
+    justify-content: center;
+    flex-flow: row;
+    margin: 10px;
+}
+
+.party {
+    padding: 5px;
+    letter-spacing: .5px;
+}
+
+#candidates > div {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 3.4px solid rgb(68, 68, 68);
+    transition: all .2s ease-in-out;
+    font-size: 1.14rem;
+}
+#candidates > div:hover {
+    border: 3.6px solid rgba(110, 236, 106, 0.682);
+}
+
+.register-section {
+    margin: 13px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+div#register {
+    margin: 6px;
+    cursor: pointer;
+    padding: 10px;
+    border: 3px solid transparent;
+    transition: all .2s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    letter-spacing: .2px;
+
+}
+div#register:hover {
+    border-color: rgba(110, 236, 106, 0.682);;
+}
+
+.register-form {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register-input {
+    margin: 5px;
+    outline: 0;
+    border-radius: 0;
+    width: 300px;
+    height: 23px;
+    padding: 3px;
+    font-size: 16px;
+    border: 3px solid rgb(35, 35, 35);
+}
+.register-input::placeholder {
+    font-size: 16px;
+}
+#red {
+    border: 3px solid rgb(255, 3, 3);
+}
