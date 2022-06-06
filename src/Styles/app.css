@@ -15,7 +15,6 @@
 }
 
 #subtitle {
-    /* width: 100vw; */
     text-align: center;
     margin: 5px;
     padding: 10px;
@@ -25,15 +24,16 @@
 #candidates {
     display: flex;
     flex-wrap: wrap;
-    /* width: 100vw; */
     justify-content: center;
     flex-flow: row;
     margin: 10px;
+    text-align: center;
 }
 
 .party {
     padding: 5px;
     letter-spacing: .5px;
+    text-align: center;
 }
 
 #candidates > div {
@@ -99,4 +99,21 @@ div#register:hover {
 }
 #red {
     border: 3px solid rgb(255, 3, 3);
+}
+
+@media screen and (max-width: 500px) {
+    div#candidates {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 345px) {
+    input.register-input {
+        width: 200px;
+        height: 21px;
+    }
+}
+@media screen and (max-width: 238px) {
+    input.register-input {
+        width: 170px;
+    }
 }
