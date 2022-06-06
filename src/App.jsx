@@ -262,7 +262,7 @@ const App = () => {
             const signer = provider.getSigner(mainAddress);
 
             // Gets the contract address from .env
-            const contractAddress = import.meta.env.VITE_CONTRACT
+            const contractAddress = "0x1e3FD4eF5146DA8eC196856E5E83F2695852BE0f"
 
             // Finnally connects to the contract
             const contract = new ethers.Contract(contractAddress, abi, signer);
@@ -300,6 +300,7 @@ const App = () => {
           // In case of any error
           catch (err) {
             alert("An error occured")
+            console.log(err);
           }
         }
       } 
@@ -327,7 +328,8 @@ const App = () => {
     const { ethereum } = window;
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner(walletAddress);
-    const votingContract = new ethers.Contract(import.meta.env.VITE_CONTRACT, abi, signer);
+    const contractAddress = "0x1e3FD4eF5146DA8eC196856E5E83F2695852BE0f"
+    const votingContract = new ethers.Contract(contractAddress, abi, signer);
     
     // The main registry process posted to the contract
     const registry = await votingContract.register(textDetails.firstName, textDetails.lastName, textDetails.age);
@@ -351,7 +353,8 @@ const App = () => {
     const { ethereum } = window;
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner(walletAddress);
-    const votingContract = new ethers.Contract(import.meta.env.VITE_CONTRACT, abi, signer);
+    const contractAddress = "0x1e3FD4eF5146DA8eC196856E5E83F2695852BE0f"
+    const votingContract = new ethers.Contract(contractAddress, abi, signer);
 
     // Checking if the user is registered
     if (registered) {
