@@ -5,6 +5,9 @@ import { ethers } from 'ethers'; // The best web3 library (IMO 😊)
 
 const App = () => {
   // The main component for the web app
+  
+  // A very important info for the users to note
+  alert("App is running on the rinkeby test network")
 
   // This state gets the wallet address of the user 
   const [walletAddress, setWalletAddress] = useState(null);
